@@ -503,6 +503,13 @@ section .container {
 	bottom:0;
 	background: rgba(0, 0, 0, .6);
 }
+.overlayWhite {
+    /*width: 100%;
+    height: 100%;*/
+    bottom: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, .6);
+}
 .banner-inner {
 	display: table;
 	height: 100%;
@@ -1121,11 +1128,13 @@ ul.work li.active, ul.work li:hover {
 	margin-bottom:30px;
 }
 .contact-info {
-    margin-bottom: 61px;
+    /*margin-bottom: 61px;*/
     float: left;
     width: 100%;
-    padding-top: 10px;
-    background-image: url("../images/contact.png");
+    /*padding-top: 10px;*/
+    padding-left: 50px;
+    /*background-image: url(../images/contact.jpg);
+    background-repeat:no-repeat;*/
 }
 .contact-info-box {
     text-align: center;
@@ -1145,6 +1154,21 @@ ul.work li.active, ul.work li:hover {
     position: absolute;
     left: 0;
 }
+
+.contact-info-box .contact-icon span{
+        color: #FFF;
+        font-size: 16px;
+        margin-bottom: 24px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        background: #343435;
+        display: inline-block;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+    }
+
 .contact-desc {
     margin-left: 80px;
     text-align: left;
@@ -1196,3 +1220,26 @@ footer {
 .social-icons ul li a:hover {
 	color:#FFF;
 }
+
+
+.thumb img {
+    /*border: 1px solid #000;
+    margin: 3px;*/
+    float: left;
+}
+
+.thumb span {
+    position:relative;
+    position: absolute;
+    visibility: hidden;    
+}
+
+.thumb:hover span {   
+    top: -25px;
+    left: -25px;
+    width: 200px;
+    height: 200px;    
+    z-index: 1;
+    visibility: visible;
+}
+	
