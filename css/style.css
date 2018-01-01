@@ -442,6 +442,7 @@ section .container {
 }
 .section-heading {
 	margin: 0px 0px 70px;
+	padding-top: 10px;
 }
 .section-heading h2 {
     font-size: 42px;
@@ -545,7 +546,18 @@ section .container {
 .banner-caption-main .btn {
 	margin: 30px 5px 0;
 }
-
+.blockNumber{
+    z-index: 2000;
+    left: 10px;
+    width: 250px;
+    height: 50px;
+}
+.blockInfo{
+    z-index: 2000;
+    left: 10px;
+    width: 500px;
+    height: 150px;
+}
 /*--------------------------------------------*/
 /*   About Section
 /*--------------------------------------------*/
