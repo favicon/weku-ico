@@ -1,1 +1,1 @@
-# wiwi-ico
+# weku-ico
