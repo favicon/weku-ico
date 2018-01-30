@@ -1,0 +1,14 @@
+.flipdiv {width: 12rem; height:18rem}
+.card-back {overflow-y:auto; width: 12rem; height:15rem; border-bottom: 1px solid royalblue;}
+.card-front {width: 12rem; height:15rem}
+.card-text {padding-top:5px}
+.card-footer {
+    padding: 0rem;
+    background-color: rgba(0,0,0,.03);
+    border-top: 1px solid rgba(0,0,0,.125);
+}
+@media (min-width: 768px){
+    .navbar-toggle {
+        display: none;
+    }
+}

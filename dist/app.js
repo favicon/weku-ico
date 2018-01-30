@@ -94,7 +94,7 @@ _https2.default.createServer({
 function getCurrentBlock() {
     _steem2.default.api.getState('trending2', function (err, response) {
         _steem2.default.api.getBlock(response.props.head_block_number, function (err, result) {
-            var currentBlockNumber = 'The current block number:' + response.props.head_block_number;
+            var currentBlockNumber = 'The current WeKuChain block number(refresh every 5 seconds): ' + response.props.head_block_number;
             var blockContent = JSON.stringify(result, null, 4).replace("initminer", "wekuminer").replace('"transaction_merkle_root": "0000000000000000000000000000000000000000",', '');
             returnJson = { 'currentBlockNumber': currentBlockNumber, 'blockContent': blockContent };
             return false;
